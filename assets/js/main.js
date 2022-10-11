@@ -11,4 +11,34 @@ si ma noi cosa vogliamo fare?
 torniamo a scrivere in italiano
 proviamo ad immaginare le operazioni che vogliamo far svolgere al nostro programma così come lo faremmo "a mano" */
 
-alert('ciao');
+/* ESERCIZIO 1 Mail
+1. Chiedi all’utente la sua email
+2. controlla che sia nella lista di chi può accedere
+3. stampa un messaggio appropriato sull’esito del controllo
+
+strumenti
+prompt 
+array
+ciclo for
+condizione if/else
+*/
+
+//1.
+const userMail = prompt('inserisci la tua mail');
+console.log(userMail);
+
+//2.
+const usersList = ['pincopallino@gmail.com', 'dany.t_87@gmail.com', 'nomeutente@hotmail.com'];
+
+//3.
+for (let i = 0; i < usersList.length; i++) {
+
+    const user = usersList[i];
+
+    if (userMail !== user) {
+        console.log('Accesso negato');
+
+    } else {
+        console.log('Puoi accedere');
+    }
+}
