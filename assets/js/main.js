@@ -25,9 +25,10 @@ condizione if/else
 
 //1.
 let userMail = prompt('inserisci la tua mail');
-console.log(userMail);
+//console.log(userMail);
 //la condizione è falsa di default 
-userMail = false;
+
+
 
 //2.
 const usersList = ['pincopallino@gmail.com', 'dany.t_87@gmail.com', 'nomeutente@hotmail.com'];
@@ -44,9 +45,13 @@ for (let i = 0; i < usersList.length; i++) {
     }
 
 }
+
+userMail = false;
 if (userMail == false) {
-    console.log('Accesso negato ');
+
+    console.log(' Accesso negato ');
 }
+
 /**
  * console.log('Puoi accedere');
         //3.
