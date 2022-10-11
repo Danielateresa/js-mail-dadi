@@ -14,8 +14,9 @@ proviamo ad immaginare le operazioni che vogliamo far svolgere al nostro program
 
 
 /*strumenti
-math.random inserita in due variabili, una per il pc, ua per il giocatore*/
-
+math.random inserita in due variabili, una per il pc, ua per il giocatore
+if/else 
+*/
 
 //1
 const numPc = Math.round(Math.random() * 6);
@@ -23,3 +24,12 @@ console.log(numPc);
 
 const numPlayer = Math.round(Math.random() * 6);
 console.log(numPlayer);
+
+//2
+if (numPc > numPlayer) {
+    console.log('hai perso');
+} else {
+    console.log('hai vinto');
+}
+
+
