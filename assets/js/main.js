@@ -24,8 +24,10 @@ condizione if/else
 */
 
 //1.
-const userMail = prompt('inserisci la tua mail');
+let userMail = prompt('inserisci la tua mail');
 console.log(userMail);
+//la condizione è falsa di default 
+userMail = false;
 
 //2.
 const usersList = ['pincopallino@gmail.com', 'dany.t_87@gmail.com', 'nomeutente@hotmail.com'];
@@ -35,15 +37,21 @@ for (let i = 0; i < usersList.length; i++) {
     const user = usersList[i];
     const h1El = document.querySelector('h1');
 
-    if (userMail !== user) {
+    if (userMail == user) {
+        //qui la condizione diventa vera
+        userMail = true;
+        console.log(' Puoi accedere ');
+    }
+
+}
+if (userMail == false) {
+    console.log('Accesso negato ');
+}
+/**
+ * console.log('Puoi accedere');
+        //3.
+        h1El.insertAdjacentHTML('beforeend', userMail + ' Puoi accedere ');
         console.log('Accesso negato');
         //3.
-        h1El.insertAdjacentHTML('beforeend', user + ' Accesso negato ');
-
-    } else {
-        console.log('Puoi accedere');
-        //3.
-        h1El.insertAdjacentHTML('beforeend', user + ' Puoi accedere ');
-    }
-}
-
+        h1El.insertAdjacentHTML('beforeend', userMail + ' Accesso negato ');
+ */
