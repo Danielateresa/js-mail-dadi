@@ -28,8 +28,10 @@ console.log(numPlayer);
 //2
 if (numPc > numPlayer) {
     console.log('hai perso');
-} else {
+} else if (numPc < numPlayer) {
     console.log('hai vinto');
+} else if (numPc == numPlayer) {
+    console.log('pareggio');
 }
 
 
